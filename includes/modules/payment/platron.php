@@ -352,7 +352,6 @@ if ($_SERVER["HTTP_X_FORWARDED_FOR"]) {
 			'pg_lifetime'			=> (MODULE_PAYMENT_PLATRON_LIFETIME)?MODULE_PAYMENT_PLATRON_LIFETIME*60:0,
 			'pg_testing_mode'		=> (MODULE_PAYMENT_PLATRON_TEST_MODE == 'test')? 1 : 0 ,
 			'pg_description'		=> $strDescription,
-			'pg_user_ip'			=> $_SERVER['REMOTE_ADDR'],
 			'pg_language'			=> $lang['code'],
 			'pg_check_url'			=> 'http://' . $_SERVER['HTTP_HOST'] . '/platron_invoice.php',
 			'pg_result_url'			=> 'http://' . $_SERVER['HTTP_HOST'] . '/platron_invoice.php',
